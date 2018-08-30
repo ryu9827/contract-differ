@@ -2,6 +2,7 @@
   "name": "contract-differ",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ryu9827.github.io/contract-differ/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
@@ -16,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
