@@ -51,8 +51,13 @@ class Body extends Component {
     }
 
     render(){        
-        console.log(this.state.ContentLeft)
-        console.log(this.state.ContentRight)
+        // console.log(this.state.ContentLeft)
+        // console.log(this.state.ContentRight)
+        // if(this.state.compareResult){
+        //     console.log("empty array is true");
+        // }else{console.log("it is false");
+        // }
+        console.log(this.state.compareResult.length === 0)
         return(
             <div>
                 <br></br>
@@ -70,9 +75,9 @@ class Body extends Component {
                 <Row>
                     <Col xs="3"></Col>
                     <Col xs="6"><br></br>
-                    <Card><pre>
+                    {this.state.compareResult.length!==0 && <Card><pre>
                         <RenderResult compareResult={this.state.compareResult} /> 
-                        </pre></Card>
+                        </pre></Card>}
                     </Col>
                     <Col xs="3"></Col>
                 </Row>
